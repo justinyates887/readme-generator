@@ -7,9 +7,13 @@ const fileAsync = util.promisify(fs.writeFile);
 const content = answers => {
   return `
   #${answers.repotitle}
+
   By : ${answers.username};
 
+
+
   ##${answers.reponame}
+
   *${answers.description}
   
   `;
