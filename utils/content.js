@@ -45,7 +45,7 @@ const content = (answers) => {
 
 ${answers.description}
 
-<a name="installation></a>
+<a name="installation"></a>
 #### Installation
 
 ${answers.installation}
