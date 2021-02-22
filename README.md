@@ -13,32 +13,32 @@
 - [License](#license)
 
 <a name="description"></a>
-#### Description
+## Description
 
 A readme generator for any of your projects. It will create a quality readme with all desired catagories.
 
 <a name="installation"></a>
-#### Installation
+## Installation
 
 Git clone repo, then npm install for dependancies. To run, use node . or node index.js.
 
 <a name="usage"></a>
-#### Usage
+## Usage
 
 To generate a readme for your project.
 
 <a name="contributors"></a>
-#### Contributors
+## Contributors
 
 Justin Yates
 
 <a name="tests"></a>
-#### Tests
+## Tests
 
 Manual testing 
 
 <a name="license"></a>
-#### License
+## License
 
 No license
     
