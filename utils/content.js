@@ -28,47 +28,47 @@ const content = (answers) => {
     }
 
     return `
-    # ${answers.title}
+# ${answers.title}
 
-    ${badge}
-  
-    ### Table of Contents:
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
-    - [License](#license)
-  
-    <a name="description"></a>
-    #### Description
+![](${badge})
 
-    ${answers.description}
+### Table of Contents:
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [License](#license)
 
-    <a name="installation></a>
-    #### Installation
+<a name="description"></a>
+#### Description
 
-    ${answers.installation}
+${answers.description}
 
-    <a name="usage"></a>
-    #### Usage
+<a name="installation></a>
+#### Installation
 
-    ${answers.usage}
+${answers.installation}
 
-    <a name="contributors"></a>
-    #### Contributors
+<a name="usage"></a>
+#### Usage
 
-    ${answers.contributors}
+${answers.usage}
 
-    <a name="tests"></a>
-    #### Tests
+<a name="contributors"></a>
+#### Contributors
 
-    ${answers.tests}
+${answers.contributors}
 
-    <a name="license"></a>
-    #### License
+<a name="tests"></a>
+#### Tests
 
-    ${license}
+${answers.tests}
+
+<a name="license"></a>
+#### License
+
+${license}
     `;
   }
 

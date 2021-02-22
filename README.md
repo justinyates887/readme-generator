@@ -1,43 +1,42 @@
+# Readme generator
 
-    # Readme generator
+![](https://img.shields.io/badge/No-License-red)
 
-    https://img.shields.io/badge/No-License-red
-  
-    ### Table of Contents:
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
-    - [License](#license)
-  
-    <a name="description"></a>
-    #### Description
+### Table of Contents:
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [License](#license)
 
-    A readme generator for any of your projects. It will create a quality readme with all desired catagories.
+<a name="description"></a>
+#### Description
 
-    <a name="installation></a>
-    #### Installation
+A readme generator for any of your projects. It will create a quality readme with all desired catagories.
 
-    Git clone repo, then npm install for dependancies. To run, use node . or node index.js.
+<a name="installation></a>
+#### Installation
 
-    <a name="usage"></a>
-    #### Usage
+Git clone repo, then npm install for dependancies. To run, use node . or node index.js.
 
-    To generate a readme for your project.
+<a name="usage"></a>
+#### Usage
 
-    <a name="contributors"></a>
-    #### Contributors
+To generate a readme for your project.
 
-    Justin Yates
+<a name="contributors"></a>
+#### Contributors
 
-    <a name="tests"></a>
-    #### Tests
+Justin Yates
 
-    Manual testing 
+<a name="tests"></a>
+#### Tests
 
-    <a name="license"></a>
-    #### License
+Manual testing 
 
-    No license
+<a name="license"></a>
+#### License
+
+No license
     
