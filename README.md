@@ -15,7 +15,7 @@
 
 A readme generator for any of your projects. It will create a quality readme with all desired catagories.
 
-<a name="installation></a>
+<a name="installation"></a>
 #### Installation
 
 Git clone repo, then npm install for dependancies. To run, use node . or node index.js.
