@@ -1,82 +1,47 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
-const util = require("util");
 
-const fileAsync = util.promisify(fs.writeFile);
+const start = () => {
+  console.log('\
+  ======================================================================\
+  Hello!\n\
+  \n\
+  This program is a readme generator.\n\
+  The purpose is to generate a quality readme.md for you projects.\n\
+  There will be a few sections for you to fill out as follows:\n\
+  \n\
+  -Title\n\
+  -Description\n\
+  -Installation Instructions\n\
+  -Usage\n\
+  -Contributors\n\
+  -Tests\n\
+  -License\n\
+  \n\
+  You will have the option to select a license, and the appropriate badge will be selected for your readme');
 
-const content = answers => {
-  return `
-  #${answers.repotitle}
-
-  By : ${answers.username};
-
-
-
-  ##${answers.reponame}
-
-  *${answers.description}
-  
-  `;
-}
-
-/* Prompts for messages*/
-inquirer
+  inquirer
   .prompt([
     {
       type: 'input',
-      name: 'username',
-      message: 'What is your user-name?',
-      /*All inputs will require validation*/
+      name: 'begin',
+      message: 'Are you ready to begin?',
       validate: function (answer) {
           if(answer.length === 0){
-              return console.log("No valid username recieved");
+              return console.log("No valid title recieved");
           } else {
               return true;
           }
       }
-    },
-    {
-      type: 'input',
-      name: 'reponame',
-      message: 'What is the name of your repo?',
-      validate: function (answer) {
-        if(answer.length === 0){
-            return console.log("No valid repo name recieved");
-        } else {
-            return true;
-        }
+  }
+  ]).then((answers) => {
+    if (answers.begin === 'yes' || answers.begin === 'y'){
+      prompts.prompts();
+    } else if(answers.begin === 'no' || answers.begin === 'n'){
+      return;
+    } else {
+      return;
     }
-    },
-    {
-      type: 'input',
-      name: 'repotitle',
-      message: 'What is the title of your repo?',
-      validate: function (answer) {
-        if(answer.length === 0){
-            return console.log("No valid title recieved");
-        } else {
-            return true;
-        }
-    }
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: 'What is the project description?',
-      validate: function (answer) {
-        if(answer.length === 0){
-            return console.log("No valid description recieved");
-        } else {
-            return true;
-        }
-    }
-    },
-  ])
-  .then(async (answers) => {
-    let data = [];
-    data.push(answers);
-    console.log(data)
-    await fileAsync('README.md', content(answers), err => {
-      err ? console.log(err) : console.log('Successfully created README.md!')
-  });
-  });
+  })
+}
+
+start();

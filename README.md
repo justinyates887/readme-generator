@@ -1,12 +1,43 @@
 
-  # Readme Generator
-  By : Justin Yates;
+    # Readme generator
 
-  ## Readme Generator
-  * This project will generate a basic readme file for any project.
+    https://img.shields.io/badge/No-License-red
   
-  **Future Plans**
+    ### Table of Contents:
+    - [Description](#description)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributors](#contributors)
+    - [Tests](#tests)
+    - [License](#license)
   
-  - I hope to add more variablility and more sections to make a complete readme everytime with minimal text edits by the user.
-  
-  
+    <a name="description"></a>
+    #### Description
+
+    A readme generator for any of your projects. It will create a quality readme with all desired catagories.
+
+    <a name="installation></a>
+    #### Installation
+
+    Git clone repo, then npm install for dependancies. To run, use node . or node index.js.
+
+    <a name="usage"></a>
+    #### Usage
+
+    To generate a readme for your project.
+
+    <a name="contributors"></a>
+    #### Contributors
+
+    Justin Yates
+
+    <a name="tests"></a>
+    #### Tests
+
+    Manual testing 
+
+    <a name="license"></a>
+    #### License
+
+    No license
+    
