@@ -41,32 +41,32 @@ const content = (answers) => {
 - [License](#license)
 
 <a name="description"></a>
-#### Description
+## Description
 
 ${answers.description}
 
 <a name="installation"></a>
-#### Installation
+## Installation
 
 ${answers.installation}
 
 <a name="usage"></a>
-#### Usage
+## Usage
 
 ${answers.usage}
 
 <a name="contributors"></a>
-#### Contributors
+## Contributors
 
 ${answers.contributors}
 
 <a name="tests"></a>
-#### Tests
+## Tests
 
 ${answers.tests}
 
 <a name="license"></a>
-#### License
+## License
 
 ${license}
     `;
