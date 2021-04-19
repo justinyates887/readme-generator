@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const prompts = require('./utils/prompts')
 
 const start = () => {
   console.log('\
